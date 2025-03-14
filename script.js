@@ -29,7 +29,7 @@ function displayTradeInfo() {
         <div class="title">
           
           <div class="badge">B</div>
-          <div class="exchange">${tradingPair}</div>
+          <div class="exchange">${tradingPair.toUpperCase()}</div>
           <span class="Perpetual"> Perpetual </span>
           <div class="margin">Cross ${leverage}x</div>
           <span class="warning"> !!!!</span>
