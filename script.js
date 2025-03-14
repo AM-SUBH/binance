@@ -21,6 +21,7 @@ function displayTradeInfo() {
   const liquidationPrice = entryPrice - (margin * entryPrice) / size;
   const marginRatio = ((entryPrice - liquidationPrice) / entryPrice) * 100;
 
+   const col = leverage>33? "-red" : (leverage>17?"-yellow":"-green")
   // Create the info content.
   const infoContent = `
       
@@ -31,8 +32,8 @@ function displayTradeInfo() {
           <div class="badge">B</div>
           <div class="exchange">${tradingPair.toUpperCase()}</div>
           <span class="Perpetual"> Perpetual </span>
-          <div class="margin">Cross ${leverage}x</div>
-          <span class="warning"> !!!!</span>
+          <div class="margin">${marginMode} ${leverage}x</div>
+          <span class="warning${col}"> !!!!</span>
           
               <ion-icon name="share-social-outline" class="share-icon"></ion-icon>
       </div>

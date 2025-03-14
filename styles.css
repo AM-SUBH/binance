@@ -50,10 +50,26 @@ body {
     "Lucida Sans", Arial, sans-serif;
 }
 
-.warning {
+.warning-red {
   font-weight: 400;
   font-size: 19px;
   margin-right: 189px;
+  color: red;
+  margin-left: 5px;
+}
+.warning-green {
+  font-weight: 400;
+  font-size: 19px;
+  margin-right: 189px;
+  color:  #2ecc71;
+  margin-left: 5px;
+}
+.warning-yellow {
+  font-weight: 400;
+  font-size: 19px;
+  margin-right: 189px;
+  color:  yellow;
+  margin-left: 5px;
 }
 
 .share-icon {
@@ -82,11 +98,6 @@ body {
 .subtitle {
   color: white;
   font-size: 14px;
-}
-
-.warning {
-  color: red;
-  margin-left: 5px;
 }
 
 .stats {
