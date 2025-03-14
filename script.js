@@ -21,7 +21,7 @@ function displayTradeInfo() {
   const liquidationPrice = entryPrice - (margin * entryPrice) / size;
   const marginRatio = ((entryPrice - liquidationPrice) / entryPrice) * 100;
 
-   const col = leverage>33? "-red" : (leverage>17?"-yellow":"-green")
+  const col = leverage > 33 ? "-red" : leverage > 17 ? "-yellow" : "-green";
   // Create the info content.
   const infoContent = `
       
